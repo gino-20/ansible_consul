@@ -13,5 +13,5 @@ Requirements
 Usage
 ----------------
 
-$ ansible-playbook -t register playbook.yml -> Register services from vars/main.yml
+$ ansible-playbook -t register playbook.yml -> Register services from vars/main.yml<br>
 $ ansible-playbook -t unregister playbook.yml -> Unregister services from vars/main.yml
