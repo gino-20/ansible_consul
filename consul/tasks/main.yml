@@ -1,0 +1,18 @@
+---
+ tasks file for consul
+- name: Register service
+  community.general.consul:
+    service_name: {{ item.service_name }}
+    service_port: {{ item.service.port }}
+    service_address: {{ item.service.address }}
+  with_items:
+    "{{ services }}"
+  tags:
+    - register
+- name: Unregister service
+  community.general.consul:
+    service_name: {{ item.service_name }}
+  with_items:
+    "{{ services }}"
+  tags:
+    - unregister

@@ -1,0 +1,4 @@
+- name: Consul service management playbook
+  hosts: localhost
+  roles:
+    - consul
