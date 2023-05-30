@@ -1,2 +1,7 @@
 ---
-# defaults file for consul
+# vars file for consul
+services:
+  - { name: "tst_service1", port: "1234", address: "1.1.1.1" }
+  - { name: "tst_service2", port: "1234", address: "1.1.1.1" }
+  - { name: "tst_service3", port: "1234", address: "1.1.1.1" }
+
